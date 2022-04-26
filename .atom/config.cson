@@ -1,0 +1,213 @@
+"*":
+  Zen:
+    fullscreen: false
+    softWrap: true
+    tabs: "multiple"
+    width: 2000
+  "auto-dark-mode":
+    darkProfile: "one-dark-ui old-atom-dracula"
+    lightProfile: "one-light-ui solarized-light-syntax"
+    notifyOnChange: false
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  "bracket-matcher":
+    autocompleteBrackets: false
+    wrapSelectionsInBrackets: false
+  "command-palette": {}
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    disabledPackages: [
+      "about"
+      "archive-view"
+      "autocomplete-atom-api"
+      "autocomplete-snippets"
+      "autoflow"
+      "autosave"
+      "background-tips"
+      "bookmarks"
+      "deprecation-cop"
+      "dev-live-reload"
+      "exception-reporting"
+      "image-view"
+      "language-csharp"
+      "language-git"
+      "language-go"
+      "language-java"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-property-list"
+      "language-python"
+      "language-toml"
+      "link"
+      "metrics"
+      "open-on-github"
+      "package-generator"
+      "snippets"
+      "styleguide"
+      "timecop"
+      "update-package-dependencies"
+      "welcome"
+      "wrap-guide"
+      "keybinding-resolver"
+      "github"
+      "git-diff"
+      "go-to-line"
+      "language-less"
+      "symbols-view"
+      "markdown-preview"
+    ]
+    editor:
+      multiCursorOnClick: true
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      ".sass-cache"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "auto-update-packages"
+      "git-diff"
+      "grammar-selector"
+      "highlight-selected"
+      "language-clojure"
+      "lisp-paredit"
+      "notifications"
+      "tree-view"
+      "sort-lines"
+      "sorter"
+      "spell-check"
+      "proto-repl"
+      "Zen"
+    ]
+    projectHome: "/Users/admin/Work"
+    restorePreviousWindowsOnStart: "always"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "old-atom-dracula"
+    ]
+    titleBar: "hidden"
+  editor:
+    fontFamily: "inconsolata"
+    fontSize: 21
+    preferredLineLength: 200
+    scrollPastEnd: true
+    tabType: "soft"
+    undoGroupingInterval: 1
+  "exception-reporting":
+    userId: "908f6f61-c318-4131-b12d-2753d893f074"
+  "find-and-replace":
+    scrollToResultOnLiveSearch: true
+    useRipgrep: true
+  "fuzzy-finder":
+    ignoredNames: [
+      "node_modules"
+      "cljs-out"
+    ]
+  "highlight-selected":
+    ignoreCase: true
+  "line-ending-selector":
+    defaultLineEnding: "LF"
+  "lisp-paredit":
+    indentationForms: [
+      "try"
+      "catch"
+      "finally"
+      "let"
+      "are"
+      "/^def.*/"
+      "fn"
+      "cond"
+      "if"
+      "if-let"
+      "for"
+      "/when.*/"
+      "testing"
+      "doseq"
+      "dotimes"
+      "loop"
+      "ns"
+    ]
+    strict: false
+  "one-dark-ui":
+    hideDockButtons: true
+  "one-light-ui":
+    hideDockButtons: true
+  parinfer:
+    "file-extensions": [
+      ".boot"
+      ".cl"
+      ".clj"
+      ".cljc"
+      ".cljs"
+      ".edn"
+      ".el"
+      ".lfe"
+      ".lisp"
+      ".lsp"
+      ".rkt"
+      ".scm"
+    ]
+    "force-balance?": false
+    "show-open-file-dialog?": false
+    "use-smart-mode?": true
+  "pretty-json":
+    grammars: [
+      "source.json"
+    ]
+    prettifyOnSaveJSON: true
+  "proto-repl":
+    autoPrettyPrint: true
+    clojurePath: "/usr/local/bin/clj"
+    displayHelpText: false
+    openReplInRightPane: false
+    preferredRepl: [
+      "clojure"
+    ]
+  "show-invisibles-plus":
+    borders: {}
+    show: false
+  sorter:
+    caseSensitive: false
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.html.basic"
+      "text.html.erb"
+      "source.gfm"
+      "source.litcoffee"
+    ]
+    useLocales: false
+  "status-bar":
+    cursorPositionFormat: "%L,%C"
+    selectionCountFormat: "%C characters in %L lines"
+  tabs:
+    displayMruTabList: false
+    enableMruTabSwitching: false
+  "tree-view":
+    focusOnReveal: false
+    hideIgnoredNames: true
+  whitespace: {}
+".basic.html.text":
+  editor:
+    softWrap: true
+".clojure.source":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    nonWordCharacters: "()\"':,;~@#$%^&{}[]`"
+    softWrap: false
+    tabLength: 1
+".makefile.source":
+  "tabs-to-spaces":
+    onSave: "tabify"

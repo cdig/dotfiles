@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+run-command-on-git-revisions `git rev-list HEAD | tail -n 1` master 'cloc source | sed -n 14,14p | cut -c 77-80'
