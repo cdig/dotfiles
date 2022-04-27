@@ -26,7 +26,7 @@ brew install awscli bash bat cloc diff-so-fancy exa fd git hub node rbenv sass/s
 # 4. Change the Login shell to /opt/homebrew/bin/bash
 
 # Install the standard npm packages
-npm install -g cdig/cli gulp-cli coffeescript
+npm i -g npm cdig/cli gulp-cli coffeescript
 
 # Install desired atom packages (must install one package per line)
 apm i auto-dark-mode
