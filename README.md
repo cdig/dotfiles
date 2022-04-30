@@ -20,10 +20,13 @@ open -a safari https://brew.sh
 brew install awscli bash bat cloc diff-so-fancy exa fd git hub node rbenv sass/sass/sass yarn
 
 # Change the shell from system bash to brew bash:
-# 1. Go to System Prefs > Users & Groups
-# 2. Click the lock in the bottom left to unlock the preference pane
-# 3. Right-click the current user, and choose "Advanced Options…"
-# 4. Change the Login shell to /opt/homebrew/bin/bash
+# 1. Run the following, and note what the response is
+brew --prefix
+# 2. Go to System Prefs > Users & Groups
+# 3. Click the lock in the bottom left to unlock the preference pane
+# 4. Right-click the current user, and choose "Advanced Options…"
+# 5a. If the brew --prefix command returned /usr/local, change the Login shell to /usr/local/bin/bash
+# 5b. If the brew --prefix command returned /opt/homebrew, change the Login shell to /opt/homebrew/bin/bash
 
 # Install the standard npm packages
 npm i -g npm cdig/cli gulp-cli coffeescript
@@ -43,11 +46,10 @@ apm i tabs-to-spaces
 git clone https://github.com/cdig/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 source bootstrap.sh
-# If hub asks for credentials, your username is your GitHub username
-# For password, you have to use a token: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
-# The token issue is explained here: https://github.com/github/hub/issues/2655
-# Note that hub is no longer officially supported, so it might break in the future
-# Note that these dotfiles might behave weirdly if you don't have ruby installed. If that's the case, please edit this guide (Ivan) to pull the ruby install up from the developer section below.
+# If git asks for credentials (like a username or password), stop here and get Ivan to help!
+# Note for Ivan: use a token: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+# Note for Ivan: the token issue is explained here: https://github.com/github/hub/issues/2655
+# Note for Ivan: these dotfiles might behave weirdly if you don't have ruby installed. If that's the case, please edit this guide (Ivan) to pull the ruby install up from the developer section below.
 
 # If desired, interactively set up opinionated Mac defaults
 bash sane-defaults.sh
