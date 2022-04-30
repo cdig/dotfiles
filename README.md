@@ -32,6 +32,7 @@ brew --prefix
 npm i -g npm cdig/cli gulp-cli coffeescript
 
 # Install desired atom packages (must install one package per line)
+# If running these shows an error, just open Atom and choose Atom > Install Shell Commands
 apm i auto-dark-mode
 apm i auto-update-packages
 apm i file-icons
