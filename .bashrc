@@ -53,9 +53,11 @@ export PGDATA="/Users/admin/Library/Application Support/Postgres/var-14"
 
 # We need to prepend bins in homebrew (even though they're already on the PATH by default) so that brew comes before ruby (so we can use dart sass via brew instead of ruby sass)
 export PATH="/usr/local/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Prepend sbins in homebrew
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 # Prepend npm global
 export PATH="$(npm config get prefix):$PATH"
