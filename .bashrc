@@ -35,10 +35,7 @@ alias gra='git ra'
 alias gitra='git ra'
 
 
-# PATHS & VARS
-
-# rbenv: To enable shims and autocompletion
-eval "$(rbenv init -)"
+# PATHS
 
 # Append bins in my home
 export PATH="$PATH:~/.bin"
@@ -47,9 +44,13 @@ export PATH="$PATH:~/.bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 export PGDATA="/Users/admin/Library/Application Support/Postgres/var-14"
 
-# We need to prepend bins in homebrew (even though they're already on the PATH by default) so that brew comes before ruby (so we can use dart sass via brew instead of ruby sass)
+# We need homebrew paths to come before ruby paths, so that we get brew's sass rather than ruby's sass, so we prepend them.
+# But, we need to set up homebrew before setting up ruby, otherwise rbenv won't be on the path at all!
 export PATH="/usr/local/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
+
+# rbenv: To enable shims and autocompletion
+eval "$(rbenv init -)"
 
 # Prepend sbins in homebrew
 export PATH="/usr/local/sbin:$PATH"
@@ -60,6 +61,8 @@ export PATH="$(npm config get prefix):$PATH"
 
 # Prepend bins in the pwd
 export PATH=".:$PATH"
+
+# VARS
 
 # Improve coloring?
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
