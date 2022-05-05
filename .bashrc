@@ -1,7 +1,3 @@
-# Set up hub
-eval "$(hub alias -s)"
-
-
 # ALIASES
 
 # To ignore an alias... (https://remysharp.com/2018/08/23/cli-improved)
