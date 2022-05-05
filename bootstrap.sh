@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd "$(dirname "${BASH_SOURCE}")"
-git fetch origin main
+
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "sane-defaults.sh" --exclude "README.md" -av --no-perms . ~
 	source ~/.bash_profile
