@@ -17,7 +17,7 @@ xcode-select --install
 open -a safari https://brew.sh
 
 # Here are all the brew binaries we tend to use
-brew install awscli bash bat cloc diff-so-fancy exa fd git hub node rbenv sass/sass/sass yarn
+brew install awscli bash bat cloc diff-so-fancy exa fd git node rbenv sass/sass/sass yarn
 
 # Change the shell from system bash to brew bash:
 # 1. Run the following, and note what the response is
