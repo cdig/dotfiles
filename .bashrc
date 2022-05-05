@@ -112,8 +112,3 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
-# FIN
-
-# Clear the login message
-clear
