@@ -29,19 +29,7 @@ brew --prefix
 # 5b. If the brew --prefix command returned /opt/homebrew, change the Login shell to /opt/homebrew/bin/bash
 
 # Install the standard npm packages
-npm i -g npm cdig/cli gulp-cli coffeescript
-
-# Install desired atom packages (must install one package per line)
-# If running these shows an error, just open Atom and choose Atom > Install Shell Commands
-apm i auto-dark-mode
-apm i auto-update-packages
-apm i file-icons
-apm i highlight-selected
-apm i ivanreese/old-atom-dracula
-apm i pretty-json
-apm i show-invisibles-plus
-apm i sorter
-apm i tabs-to-spaces
+npm i -g npm cdig gulp-cli coffeescript
 
 # Set up the dotfiles
 git clone https://github.com/cdig/dotfiles.git ~/.dotfiles
@@ -73,7 +61,7 @@ brew tap heroku/brew && brew install heroku
 
 # Set up Ruby
 rbenv install -l # Figure out which version of ruby is the current
-ruby_version="3.1.2" # Update accordingly
+ruby_version="3.2.0" # Update accordingly
 rbenv install "$ruby_version"
 rbenv global "$ruby_version"
 rbenv shell "$ruby_version"
