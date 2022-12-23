@@ -8,13 +8,16 @@ alias cat='bat'
 alias find='fd'
 alias ls='exa --all --long --color-scale --git'
 
+# Quick links
+alias cdd='cd ~/.dotfiles'
+
 # Quick Tools
-alias a="atom ."
+alias a="nova ."
+alias c="cake"
+alias cs="cake start"
+alias n="nova ."
 alias r="rails"
 alias rc="rails c"
-alias y="yarn"
-alias ys="yarn start"
-alias ye="yarn electron"
 
 # A nice shortcut for pushing a WIP to github
 alias wip='git aa && git cim "∆" && git push'
@@ -35,7 +38,10 @@ alias gra='git ra'
 alias gitra='git ra'
 
 
-# PATHS
+# PATHS & VARS
+
+# rbenv: To enable shims and autocompletion
+eval "$(rbenv init -)"
 
 # Append bins in my home
 export PATH="$PATH:~/.bin"
@@ -44,25 +50,17 @@ export PATH="$PATH:~/.bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 export PGDATA="/Users/admin/Library/Application Support/Postgres/var-14"
 
-# We need homebrew paths to come before ruby paths, so that we get brew's sass rather than ruby's sass, so we prepend them.
-# But, we need to set up homebrew before setting up ruby, otherwise rbenv won't be on the path at all!
-export PATH="/usr/local/bin:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
-
-# rbenv: To enable shims and autocompletion
-eval "$(rbenv init -)"
+# We need to prepend bins in homebrew so that brew comes before ruby (so we can use dart sass via brew instead of ruby sass)
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 # Prepend sbins in homebrew
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/opt/homebrew/sbin:/usr/local/sbin:$PATH"
 
 # Prepend npm global
 export PATH="$(npm config get prefix):$PATH"
 
 # Prepend bins in the pwd
 export PATH=".:$PATH"
-
-# VARS
 
 # Improve coloring?
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
@@ -76,7 +74,7 @@ export HISTCONTROL=erasedups
 export HISTSIZE=10000
 
 # Set a minimal prompt
-export PS1="\W "
+export PS1="\W > "
 
 # BASH OPTIONS
 
@@ -88,13 +86,6 @@ shopt -s nocaseglob
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
-
-# Enable some Bash 4 features when possible:
-# * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
-# * Recursive globbing, e.g. `echo **/*.txt`
-for option in autocd globstar; do
-  shopt -s "$option" 2> /dev/null
-done
 
 # Add nice shell titles for Hyper — https://github.com/zeit/hyper/issues/1188#issuecomment-267301723
 case "$TERM" in
