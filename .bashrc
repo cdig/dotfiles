@@ -40,9 +40,6 @@ alias gitra='git ra'
 
 # PATHS & VARS
 
-# rbenv: To enable shims and autocompletion
-eval "$(rbenv init -)"
-
 # Append bins in my home
 export PATH="$PATH:~/.bin"
 
@@ -75,6 +72,9 @@ export HISTSIZE=10000
 
 # Set a minimal prompt
 export PS1="\W > "
+
+# rbenv: To enable shims and autocompletion
+eval "$(rbenv init -)"
 
 # BASH OPTIONS
 
