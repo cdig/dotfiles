@@ -28,8 +28,8 @@ brew --prefix
 # 5a. If the brew --prefix command returned /usr/local, change the Login shell to /usr/local/bin/bash
 # 5b. If the brew --prefix command returned /opt/homebrew, change the Login shell to /opt/homebrew/bin/bash
 
-# Install the standard npm packages
-npm i -g npm cdig gulp-cli coffeescript
+# Install the cdig tool
+npm i -g npm cdig
 
 # Set up the dotfiles
 git clone https://github.com/cdig/dotfiles.git ~/.dotfiles
