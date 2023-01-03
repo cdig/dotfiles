@@ -28,9 +28,6 @@ brew --prefix
 # 5a. If the brew --prefix command returned /usr/local, change the Login shell to /usr/local/bin/bash
 # 5b. If the brew --prefix command returned /opt/homebrew, change the Login shell to /opt/homebrew/bin/bash
 
-# Install the cdig tool
-npm i -g npm cdig
-
 # Set up the dotfiles
 git clone https://github.com/cdig/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
@@ -40,7 +37,10 @@ source bootstrap.sh
 # Note for Ivan: the token issue is explained here: https://github.com/github/hub/issues/2655
 # Note for Ivan: these dotfiles might behave weirdly if you don't have ruby installed. If that's the case, please edit this guide (Ivan) to pull the ruby install up from the developer section below.
 
-# If desired, interactively set up opinionated Mac defaults
+# Update npm and install the cdig tool
+npm i -g npm cdig
+
+# If desired, interactively set up opinionated Mac defaults — note that these are a few years out of date
 bash sane-defaults.sh
 ```
 
