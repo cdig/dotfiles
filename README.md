@@ -39,9 +39,6 @@ source bootstrap.sh
 
 # Update npm and install the cdig tool
 npm i -g npm cdig
-
-# If desired, interactively set up opinionated Mac defaults — note that these are a few years out of date
-bash sane-defaults.sh
 ```
 
 If you're just working on content, you're done! Head back to the [Setting up a new Mac](https://github.com/cdig/docs/wiki/Setting-up-a-new-Mac) guide.
