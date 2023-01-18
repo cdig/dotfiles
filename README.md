@@ -22,11 +22,10 @@ brew install awscli bash bat cloc diff-so-fancy exa fd git node rbenv sass/sass/
 # Change the shell from system bash to brew bash:
 # 1. Run the following, and note what the response is
 brew --prefix
-# 2. Go to System Prefs > Users & Groups
-# 3. Click the lock in the bottom left to unlock the preference pane
-# 4. Right-click the current user, and choose "Advanced Options…"
-# 5a. If the brew --prefix command returned /usr/local, change the Login shell to /usr/local/bin/bash
-# 5b. If the brew --prefix command returned /opt/homebrew, change the Login shell to /opt/homebrew/bin/bash
+# 2a. If the command returned /usr/local, do the following
+sudo sh -c "echo /usr/local/bin/bash >> /etc/shells"
+chsh -s /usr/local/bin/bash
+# 2b. If the brew --prefix command returned /opt/homebrew, stop and get Ivan!
 
 # Set up the dotfiles
 git clone https://github.com/cdig/dotfiles.git ~/.dotfiles
