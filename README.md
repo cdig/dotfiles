@@ -46,7 +46,7 @@ If you're just working on content, you're done! Head back to the [Setting up a n
 
 If you are a developer working on the LBS website itself, continue with the below.
 
-```
+```bash
 # Set up an SSH key on Github
 ssh-keygen -t rsa
 pbcopy < ~/.ssh/id_rsa.pub
