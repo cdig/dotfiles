@@ -59,6 +59,7 @@ brew tap heroku/brew && brew install heroku
 rbenv install -l # Figure out which version of ruby is the current
 ruby_version="3.2.0" # Update accordingly
 rbenv install "$ruby_version"
+# Note: if this errors, run: `brew install libyaml` then try again
 rbenv global "$ruby_version"
 rbenv shell "$ruby_version"
 gem update --system
