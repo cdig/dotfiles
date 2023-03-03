@@ -45,7 +45,7 @@ export PATH="$PATH:~/.bin"
 
 # Append Postgres.app
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
-export PGDATA="/Users/admin/Library/Application Support/Postgres/var-14"
+export PGDATA="~/Library/Application Support/Postgres/var-14"
 
 # We need to prepend bins in homebrew so that brew comes before ruby (so we can use dart sass via brew instead of ruby sass)
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
