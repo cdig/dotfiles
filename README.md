@@ -36,8 +36,8 @@ source bootstrap.sh
 # Note for Ivan: the token issue is explained here: https://github.com/github/hub/issues/2655
 # Note for Ivan: these dotfiles might behave weirdly if you don't have ruby installed. If that's the case, please edit this guide (Ivan) to pull the ruby install up from the developer section below.
 
-# Update npm and install the cdig tool
-npm i -g npm cdig
+# Update npm and install the cdig tool and its dependencies
+npm i -g npm coffeescript gulp-cli cdig
 ```
 
 If you're just working on content, you're done! Head back to the [Setting up a new Mac](https://github.com/cdig/docs/wiki/Setting-up-a-new-Mac) guide.
