@@ -25,7 +25,9 @@ brew --prefix
 # 2a. If the command returned /usr/local, do the following
 sudo sh -c "echo /usr/local/bin/bash >> /etc/shells"
 chsh -s /usr/local/bin/bash
-# 2b. If the brew --prefix command returned /opt/homebrew, stop and get Ivan!
+# 2b. If the brew --prefix command returned /opt/homebrew, do this instead:
+sudo sh -c "echo /opt/homebrew/bin/bash >> /etc/shells"
+chsh -s /opt/homebrew/bin/bash
 
 # Set up the dotfiles
 git clone https://github.com/cdig/dotfiles.git ~/.dotfiles
